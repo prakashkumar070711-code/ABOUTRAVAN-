@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RAVAN KI DUNIYA</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    padding: 25px 10px;
+    color: #e6c36a;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #b89645;
+}
+
+.profile {
+    padding: 70px 20px 50px;
+}
+
+.photo {
+    width: 140px;
+    height: 140px;
+    margin: auto;
+    border: 3px solid #d4af37;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    font-weight: bold;
+    color: #f5d77e;
+    background: linear-gradient(135deg, #30240a, #111);
+    box-shadow: 0 0 30px #d4af3740;
+}
+
+h1 {
+    margin-top: 25px;
+    font-size: 48px;
+    letter-spacing: 5px;
+    color: #e6c36a;
+}
+
+.tagline {
+    margin-top: 15px;
+    color: #ccc;
+    font-size: 16px;
+}
+
+.btn {
+    display: inline-block;
+    margin: 25px 5px 0;
+    padding: 13px 20px;
+    border: 1px solid #d4af37;
+    border-radius: 5px;
+    color: #f5d77e;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.btn:hover {
+    background: #d4af37;
+    color: black;
+}
+
+.card {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px;
+    background: #111;
+    border: 1px solid #5a4820;
+    border-radius: 12px;
+}
+
+h2 {
+    color: #e6c36a;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #ccc;
+    line-height: 1.8;
+}
+
+.social {
+    display: block;
+    margin: 12px auto;
+    padding: 14px;
+    max-width: 300px;
+    border: 1px solid #d4af37;
+    border-radius: 6px;
+    color: #f5d77e;
+    text-decoration: none;
+}
+
+.social:hover {
+    background: #d4af37;
+    color: black;
+}
+
+footer {
+    margin-top: 45px;
+    padding: 25px 10px;
+    border-top: 1px solid #5a4820;
+    color: #999;
+    font-size: 12px;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 36px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>RAVAN KI DUNIYA</header>
+
+<section class="profile">
+    <div class="photo">R</div>
+
+    <h1>RAVAN</h1>
+
+    <p class="tagline">My World. My Journey. My Story.</p>
+
+    <a href="#about" class="btn">ABOUT ME</a>
+    <a href="#social" class="btn">FOLLOW ME</a>
+</section>
+
+<section class="card" id="about">
+    <h2>👑 About Me</h2>
+    <p>
+        Welcome to Ravan Ki Duniya!
+        This is my personal website where you can
+        know more about me and find my social profiles.
+        My world, my journey, my story.
+    </p>
+</section>
+
+<section class="card" id="social">
+    <h2>✦ Connect With Me</h2>
+
+    <a class="social"
+       href="https://www.youtube.com/"
+       target="_blank" rel="noopener noreferrer">
+       ▶ YouTube
+    </a>
+
+    <a class="social"
+       href="https://www.instagram.com/"
+       target="_blank" rel="noopener noreferrer">
+       ◎ Instagram
+    </a>
+
+    <a class="social"
+       href="https://www.whatsapp.com/"
+       target="_blank" rel="noopener noreferrer">
+       ✆ WhatsApp
+    </a>
+</section>
+
+<footer>
+    MADE FOR RAVAN 👑<br><br>
+    © <span id="year"></span> RAVAN KI DUNIYA
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
